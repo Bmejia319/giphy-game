@@ -1,3 +1,97 @@
-.main-header {
+body {
+    margin: 10px 20px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+#topic-buttons, .jumbotron {
+    margin-top: 10px;
+}
+
+#topic-buttons>button {
+    margin: 5px 5px;
+}
+
+.panel {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.gif-panel {
+    position: relative;
+}
+
+.gif-panel .panel-body {
+    padding: 0px;
+    position: relative;
+}
+
+.fave, .download {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    text-shadow: 0 0 3px black;
+    right: 5px;
+    font-size: 1.2em;
+}
+
+.download {
+    bottom: 5px;
+}
+
+.fave {
+    top: 5px;
+}
+
+.faved, .fave:hover {
     color: red;
+}
+
+.faved:hover, .download:hover {
+    color: white;
+}
+
+#faves-heading {
+    cursor: pointer;
+}
+
+.panel-faves, .panel-form {
+    width: 100%;
+    margin-left: 0px;
+}
+
+#faves, #clear-data {
+    display: none;
+}
+
+.emoji {
+    width: 16px;
+    height: 16px;
+}
+
+@media screen and (min-width: 991px) {
+    #clear-data {
+        opacity: .5;
+        position: fixed;
+        z-index: 999;
+        top: 10px;
+        right: 0px;
+    }
+    #clear-data:hover {
+        opacity: 1;
+    }
+    #clear-data:hover span::after {
+        content: " - Clear user data";
+    }
 }
